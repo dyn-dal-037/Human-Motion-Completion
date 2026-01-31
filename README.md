@@ -91,3 +91,19 @@ hand_motion_completion/
 
 
 ```
+
+## Clean vs Occluded vs Reconstructed
+
+![Reconstruction under Occlusion](figures/trajectories.png)
+
+**Figure 1:** Comparison of clean, occluded, and reconstructed trajectories for a representative hand joint. (On sample_1 data)
+
+
+## Failure Case
+
+![Failure Case](figures/failure_case_unseen.png)
+
+**Figure 2:** Reconstruction degradation during rapid finger motion under heavy occlusion. (On new_sample_data)
+
+---
+
