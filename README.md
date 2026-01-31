@@ -3,13 +3,13 @@
 
 This project investigates robust hand motion modeling under partial and noisy observations—a critical challenge in vision-based human–robot interaction (HRI). Using a lightweight GRU-based sequence model, we reconstruct physically plausible full hand motion from incomplete joint trajectories.
 
-## ## Overview
+## Overview
 
 The focus of this work is **problem formulation, controlled evaluation, and failure analysis**, rather than large-scale deployment. We address common vision-based tracking failures such as self-occlusion, sensor noise, and missing joints due to lighting or viewpoint constraints.
 
 ---
 
-## ## Problem Formulation
+## Problem Formulation
 
 Let  denote a sequence of hand joint positions over time, where  joints.
 
@@ -21,7 +21,7 @@ The goal is to reconstruct missing trajectories while strictly preserving tempor
 
 ---
 
-## ## Methodology
+## Methodology
 
 ### Dataset & Occlusion Modeling
 
@@ -48,7 +48,7 @@ We utilize a **Masked Mean Squared Error (MSE)** loss. Error is computed *only* 
 
 ---
 
-## ## Evaluation
+## Evaluation
 
 ### Quantitative Results
 
@@ -63,7 +63,7 @@ Trajectory plots demonstrate that the model successfully preserves the overall t
 
 ---
 
-## ## Limitations & Future Work
+## Limitations & Future Work
 
 * **Data Scale:** Currently limited to 3 short sequences.
 * **Generalization:** Focused on a single interaction type (grasp-release).
@@ -73,7 +73,7 @@ Trajectory plots demonstrate that the model successfully preserves the overall t
 
 ---
 
-## ## Project Structure
+## Project Structure
 
 ```text
 hand_motion_completion/
@@ -88,5 +88,6 @@ hand_motion_completion/
 │   └── train.py               # Training pipeline
 ├── day3_evaluation.ipynb      # Visualization & failure analysis
 └── README.md
+
 
 ```
